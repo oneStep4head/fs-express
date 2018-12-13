@@ -1,0 +1,46 @@
+{
+  "metrics": [
+    {
+      "id": "e69fcfb925bbf",
+      "name": "test",
+      "owner": "fbb529bfcf96e",
+      "data": [
+        {
+          "date": "2018-12-09T17:00:00.000Z",
+          "value": "12"
+        }
+      ]
+    },
+    {
+      "id": "af86110c9ec2c",
+      "name": "test2",
+      "owner": "fbb529bfcf96e",
+      "data": [
+        {
+          "date": "1547226000000",
+          "value": 12
+        },
+        {
+          "date": "1547226000000",
+          "value": "81"
+        },
+        {
+          "date": "1547139600000",
+          "value": "8"
+        }
+      ]
+    },
+    {
+      "id": "dd8672598eb4c",
+      "name": "sadf",
+      "owner": "fbb529bfcf96e",
+      "data": []
+    }
+  ],
+  "users": [
+    {
+      "id": "fbb529bfcf96e",
+      "name": "zhekos"
+    }
+  ]
+}
