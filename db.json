@@ -1,38 +1,35 @@
 {
   "metrics": [
     {
-      "id": "e69fcfb925bbf",
-      "name": "test",
+      "id": "3a3df1d66be34",
+      "name": "jikos",
       "owner": "fbb529bfcf96e",
       "data": [
         {
-          "date": "2018-12-09T17:00:00.000Z",
-          "value": "12"
+          "date": 1544745600000,
+          "value": "21"
+        },
+        {
+          "date": 1544659200000,
+          "value": "13"
         }
       ]
     },
     {
-      "id": "af86110c9ec2c",
-      "name": "test2",
+      "id": "bb6a53c25a58b",
+      "name": "kokos",
       "owner": "fbb529bfcf96e",
-      "data": [
-        {
-          "date": "1547226000000",
-          "value": 12
-        },
-        {
-          "date": "1547226000000",
-          "value": "81"
-        },
-        {
-          "date": "1547139600000",
-          "value": "8"
-        }
-      ]
+      "data": []
     },
     {
-      "id": "dd8672598eb4c",
-      "name": "sadf",
+      "id": "4f01945dc7ef9",
+      "name": "na uge",
+      "owner": "fbb529bfcf96e",
+      "data": []
+    },
+    {
+      "id": "e8c49daa07214",
+      "name": "ros",
       "owner": "fbb529bfcf96e",
       "data": []
     }
