@@ -15,7 +15,7 @@ app.use(cookieParser());
 app.use('/', (req, res, next) => {
   setTimeout(() => {
     next();
-  }, 3000);
+  }, 2000);
 });
 
 app.use('/api', apiRoutes);
