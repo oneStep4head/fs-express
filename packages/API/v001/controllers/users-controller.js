@@ -37,7 +37,7 @@ router.get('/:id', (req, res) => {
 });
 
 // GET /users/current
-router.get('/users/current', (req, res) => {
+router.get('/current/user', (req, res) => {
   const user = db
     .get('users')
     .find({ id: req.cookies.userId })
@@ -70,7 +70,7 @@ router.post('/', (req, res, next) => {
   //   next(new Error('INVALID_API_FORMAT'));
   // }
 
-  const user = newUser(req.body.name);
+  const user = newUser(req.body.userName);
 
   console.log(user);
 

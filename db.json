@@ -29,40 +29,25 @@
           "id": "20cbceb6c45b6",
           "date": 1545350400000,
           "value": "84"
-        }
-      ]
-    },
-    {
-      "id": "242caee4a04a2",
-      "name": "kokos",
-      "owner": "fbb529bfcf96e",
-      "data": [
-        {
-          "id": "a19bd127557df",
-          "date": 1544918400000,
-          "value": "85"
         },
         {
-          "id": "98a4d16776f0d",
-          "date": 1545004800000,
-          "value": "81"
-        },
-        {
-          "id": "ad8bfed76d09a",
-          "date": 1545091200000,
-          "value": "82"
-        },
-        {
-          "id": "3fdc2334541f5",
-          "date": 1545264000000,
-          "value": "83"
-        },
-        {
-          "id": "20cbceb6c45b6",
+          "id": "85073d24fb215",
           "date": 1545350400000,
           "value": "84"
         }
       ]
+    },
+    {
+      "id": "10c35321887c1",
+      "name": "kokos",
+      "owner": "fbb529bfcf96e",
+      "data": []
+    },
+    {
+      "id": "c33ea7d72647d",
+      "name": "na uge ros",
+      "owner": "fbb529bfcf96e",
+      "data": []
     }
   ],
   "users": [
@@ -72,6 +57,13 @@
     },
     {
       "id": "66b84ac653b6f"
+    },
+    {
+      "id": "4b7ebd129129a"
+    },
+    {
+      "id": "956c58f43c3f3",
+      "name": "kokos"
     }
   ]
 }
