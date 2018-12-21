@@ -17,6 +17,13 @@ const newMetric = (name, owner) => ({
   data: [],
 });
 
+const addMetricData = newData => ({
+  id: String(Math.random()
+    .toString(16)
+    .split('.')[1]),
+  date: newData.date,
+  value: newData.value,
+});
 // router.use('/:id', (req, res, next) => {
 //   const task = db.get('tasks')
 //     .find({ id: req.params.id })
@@ -29,7 +36,10 @@ const newMetric = (name, owner) => ({
 
 // GET /metrics
 router.get('/', (req, res) => {
-  const metrics = db.get('metrics').value();
+  const metrics = db
+    .get('metrics')
+    .filter({ owner: req.cookies.userId })
+    .value();
 
   res.json({ status: 'OK', data: metrics });
 });
@@ -86,23 +96,28 @@ router.patch('/:id', (req, res, next) => {
   //   next(new Error('INVALID_API_FORMAT'));
   // }
 
-  const metric = db
+  db.get('metrics')
+    .find({ id: req.params.id })
+    .get('data')
+    .assign(req.body.newData)
+    .write();
+
+  const updatedMetric = db
     .get('metrics')
     .find({ id: req.params.id })
-    .assign(req.body)
     .value();
 
-  db.write();
-
-  res.json({ status: 'OK', data: metric });
+  res.json({ status: 'OK', data: updatedMetric });
 });
 
 // PUT A NEW DATA IN METRIC
 router.post('/:id', (req, res) => {
+  const newData = addMetricData(req.body.newValue);
+
   db.get('metrics')
     .find({ id: req.params.id })
     .get('data')
-    .push(req.body.newValue)
+    .push(newData)
     .write();
 
   const updatedMetric = db
